@@ -36,5 +36,6 @@ searchButton.addEventListener('click', () => {
         })
         .catch(error => {
             console.error('Error fetching weather data:', error);
+            doucment.write("Wrong country enter, please enter right full name of the country");
         });
 }
